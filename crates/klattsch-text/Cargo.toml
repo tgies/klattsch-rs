@@ -1,0 +1,23 @@
+[package]
+name = "klattsch-text"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Parser and schedule compiler for klattsch phoneme strings (.klatt format)."
+keywords = ["speech-synthesis", "klatt", "parser", "phoneme", "arpabet"]
+categories = ["multimedia::audio", "parser-implementations"]
+readme = "../../README.md"
+
+[dependencies]
+klattsch-core = { workspace = true }
+unicode-normalization = { workspace = true }
+
+[dev-dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,21 @@
+[package]
+name = "klattsch-wav"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "RIFF/WAVE encoder for klattsch render output."
+keywords = ["speech-synthesis", "klatt", "wav", "audio", "pcm"]
+categories = ["multimedia::audio", "encoding"]
+readme = "../../README.md"
+
+[dependencies]
+
+[dev-dependencies]
+klattsch-core = { workspace = true }
+klattsch-text = { workspace = true }
+
+[lints]
+workspace = true

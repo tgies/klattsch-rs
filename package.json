@@ -1,0 +1,13 @@
+{
+  "name": "klattsch-rs-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench:js": "node tools/bench-js.mjs",
+    "goldens": "node tools/render-goldens.mjs",
+    "check:js": "node --check tools/bench-js.mjs && node --check tools/render-goldens.mjs"
+  },
+  "devDependencies": {
+    "klattsch": "0.3.0"
+  }
+}

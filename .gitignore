@@ -1,0 +1,8 @@
+/target
+/node_modules
+/pkg
+**/pkg/
+*.wasm
+.DS_Store
+.vscode/
+.idea/

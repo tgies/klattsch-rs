@@ -1,0 +1,24 @@
+[package]
+name = "klattsch-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Realtime-safe parallel-formant speech synthesis engine (Klatt 1980 model)."
+keywords = ["speech-synthesis", "formant", "klatt", "audio", "dsp"]
+categories = ["multimedia::audio"]
+readme = "../../README.md"
+
+[features]
+default = []
+live-events = ["dep:rtrb"]
+serde = ["dep:serde"]
+
+[dependencies]
+rtrb = { workspace = true, optional = true }
+serde = { workspace = true, optional = true }
+
+[lints]
+workspace = true

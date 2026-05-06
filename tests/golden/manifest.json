@@ -1,0 +1,52 @@
+[
+  {
+    "name": "hello",
+    "text": "HH AH L OW",
+    "sampleRate": 48000
+  },
+  {
+    "name": "hello-world",
+    "text": "HH EH L OW W ER L D",
+    "sampleRate": 48000
+  },
+  {
+    "name": "single-vowel-a4",
+    "text": "b220 AH",
+    "sampleRate": 48000
+  },
+  {
+    "name": "plosives",
+    "text": "P AH T AH K AH",
+    "sampleRate": 48000
+  },
+  {
+    "name": "diphthongs",
+    "text": "AY EY OY",
+    "sampleRate": 48000
+  },
+  {
+    "name": "fricatives",
+    "text": "S SH F TH",
+    "sampleRate": 48000
+  },
+  {
+    "name": "nasals",
+    "text": "M N NG",
+    "sampleRate": 48000
+  },
+  {
+    "name": "syllables",
+    "text": "( HH AH ) ( L OW )",
+    "sampleRate": 48000
+  },
+  {
+    "name": "stress",
+    "text": "AH ! AH",
+    "sampleRate": 48000
+  },
+  {
+    "name": "steady-tone",
+    "text": "b120 AH AH AH AH",
+    "sampleRate": 48000
+  }
+]
