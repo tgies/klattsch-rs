@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: ${{ github.event.workflow_run.head_branch }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: release-plz/action@27195cf771d08bcac8726c0a41316393c5b2ec05 # v0.5.116
         with:
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: ${{ github.event.workflow_run.head_branch }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: release-plz/action@27195cf771d08bcac8726c0a41316393c5b2ec05 # v0.5.116
         with:
