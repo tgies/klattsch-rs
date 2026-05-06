@@ -8,7 +8,7 @@ authors.workspace = true
 repository.workspace = true
 description = "WebAssembly + AudioWorklet build of the klattsch speech synthesizer."
 publish = false
-readme = "../../README.md"
+readme = "README.md"
 
 [lib]
 crate-type = ["cdylib", "rlib"]

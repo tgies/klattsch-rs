@@ -9,7 +9,7 @@ repository.workspace = true
 description = "Parser and schedule compiler for klattsch phoneme strings (.klatt format)."
 keywords = ["speech-synthesis", "klatt", "parser", "phoneme", "arpabet"]
 categories = ["multimedia::audio", "parser-implementations"]
-readme = "../../README.md"
+readme = "README.md"
 
 [dependencies]
 klattsch-core = { workspace = true }

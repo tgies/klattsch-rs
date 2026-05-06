@@ -9,7 +9,7 @@ repository.workspace = true
 description = "RIFF/WAVE encoder for klattsch render output."
 keywords = ["speech-synthesis", "klatt", "wav", "audio", "pcm"]
 categories = ["multimedia::audio", "encoding"]
-readme = "../../README.md"
+readme = "README.md"
 
 [dependencies]
 

@@ -8,6 +8,8 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-05-06
+
 ### Added
 
 - `klattsch-core`: realtime-safe `FormantSynth`.

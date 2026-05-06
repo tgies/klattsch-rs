@@ -97,7 +97,7 @@ dependencies = [
 
 [[package]]
 name = "klattsch-core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rtrb",
  "serde",
@@ -105,7 +105,7 @@ dependencies = [
 
 [[package]]
 name = "klattsch-text"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "klattsch-core",
  "serde",
@@ -115,7 +115,7 @@ dependencies = [
 
 [[package]]
 name = "klattsch-wasm"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "js-sys",
  "klattsch-core",
@@ -129,7 +129,7 @@ dependencies = [
 
 [[package]]
 name = "klattsch-wav"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "klattsch-core",
  "klattsch-text",

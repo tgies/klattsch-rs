@@ -8,7 +8,7 @@ members = [
 ]
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.77"
 license = "MIT"
@@ -18,9 +18,9 @@ homepage = "https://tgies.github.io/klattsch/"
 
 [workspace.dependencies]
 # Internal crates
-klattsch-core = { version = "0.1.0", path = "crates/klattsch-core" }
-klattsch-text = { version = "0.1.0", path = "crates/klattsch-text" }
-klattsch-wav = { version = "0.1.0", path = "crates/klattsch-wav" }
+klattsch-core = { version = "0.1.1", path = "crates/klattsch-core" }
+klattsch-text = { version = "0.1.1", path = "crates/klattsch-text" }
+klattsch-wav = { version = "0.1.1", path = "crates/klattsch-wav" }
 
 # Serialization
 serde = { version = "1", features = ["derive"] }
