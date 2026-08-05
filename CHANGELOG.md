@@ -8,6 +8,12 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.2](https://github.com/tgies/klattsch-rs/compare/klattsch-core-v0.1.1...klattsch-core-v0.1.2) - 2026-08-05
+
+### Added
+
+- *(core)* phoneme bank system behind PhonemeTable
+
 ## [0.1.1] - 2026-05-06
 
 ### Added
