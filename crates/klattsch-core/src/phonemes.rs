@@ -37,14 +37,26 @@ pub struct PhonemeParams {
 }
 
 /// Phoneme parameter source. Implementors provide name -> [`PhonemeParams`]
-/// lookup. The default English ARPABET table is [`Arpabet`]; future language
-/// tables (e.g. Japanese) plug in via this trait.
+/// lookup. The default English ARPABET table is [`Arpabet`]; language tables
+/// loaded at runtime plug in via [`crate::banks::Bank`].
 pub trait PhonemeTable: Send + Sync {
     /// Resolve a phoneme name (e.g. `"AH"`, `"UW"`) to its parameters.
     fn lookup(&self, name: &str) -> Option<PhonemeParams>;
 
-    /// Iterator over all phoneme names known to this table.
-    fn names(&self) -> &'static [&'static str];
+    /// Phoneme names in table order, for tables whose names are compile-time
+    /// constants. Tables built at runtime cannot satisfy the `'static`
+    /// lifetime and return an empty slice; use [`name_list`][Self::name_list]
+    /// for a source-agnostic listing.
+    fn names(&self) -> &'static [&'static str] {
+        &[]
+    }
+
+    /// Phoneme names in table order, valid for any implementor. Defaults to
+    /// [`names`][Self::names], so tables with static name lists need only
+    /// implement that one.
+    fn name_list(&self) -> Vec<&str> {
+        self.names().to_vec()
+    }
 }
 
 /// English ARPABET (Klatt 1980 Tables II-III), 47 phonemes.

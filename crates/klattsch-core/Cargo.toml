@@ -15,10 +15,15 @@ readme = "README.md"
 default = []
 live-events = ["dep:rtrb"]
 serde = ["dep:serde"]
+# Reading phoneme banks from the canonical JSON schema. `preserve_order` is
+# required, not a preference: phoneme order within a bank is the index space
+# callers address phonemes by, and a BTreeMap would silently alphabetize it.
+json = ["dep:serde", "dep:serde_json"]
 
 [dependencies]
 rtrb = { workspace = true, optional = true }
 serde = { workspace = true, optional = true }
+serde_json = { workspace = true, optional = true }
 
 [lints]
 workspace = true
