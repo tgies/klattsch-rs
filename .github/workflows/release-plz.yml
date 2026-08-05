@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'tgies' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push' }}
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           ref: ${{ github.event.workflow_run.head_branch }}
       - uses: dtolnay/rust-toolchain@stable
-      - uses: release-plz/action@27195cf771d08bcac8726c0a41316393c5b2ec05 # v0.5.116
+      - uses: release-plz/action@2eb1d8bcb770b4c48ccfaad919734b38b51958c9 # v0.5.131
         with:
           command: release
         env:
@@ -36,12 +36,12 @@ jobs:
       group: release-plz-${{ github.ref }}
       cancel-in-progress: false
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           ref: ${{ github.event.workflow_run.head_branch }}
       - uses: dtolnay/rust-toolchain@stable
-      - uses: release-plz/action@27195cf771d08bcac8726c0a41316393c5b2ec05 # v0.5.116
+      - uses: release-plz/action@2eb1d8bcb770b4c48ccfaad919734b38b51958c9 # v0.5.131
         with:
           command: release-pr
         env:
